@@ -17,5 +17,5 @@ build:
 
 .PHONY: push
 push: build
-	docker tag $(DOCKER_IMAGE) alejandrox1/cool-kube:v1
-	docker push alejandrox1/cool-kube:v1
+	docker tag $(DOCKER_IMAGE) localhost:5000/cool-kube:v1
+	docker push localhost:5000/cool-kube:v1

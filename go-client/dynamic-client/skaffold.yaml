@@ -2,7 +2,7 @@ apiVersion: skaffold/v1beta14
 kind: Config
 build:
   artifacts:
-  - image: alejandrox1/cool-kube
+  - image: alejandrox1/cool-app
 deploy:
   kubectl:
     manifests:

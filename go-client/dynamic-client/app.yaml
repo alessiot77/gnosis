@@ -49,5 +49,5 @@ spec:
       serviceAccount: cool-kube
       containers:
       - name: cool-kube
-        image: alejandrox1/cool-kube:v1
+        image: localhost:5000/cool-kube:v1
         imagePullPolicy: Always

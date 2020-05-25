@@ -16,7 +16,7 @@ import (
 )
 
 var (
-	ns string = "default"
+	ns = "default"
 )
 
 func createPod(name, ns string) *corev1.Pod {
@@ -98,7 +98,7 @@ func main() {
 		podName := fmt.Sprintf("demo-pod-%d", i)
 		pod := createPod(podName, ns)
 		_, err := clientset.CoreV1().Pods(ns).Create(pod)
-		fmt.Printf("Created Pod %s\n", podName)
+		fmt.Printf("Created yet another Pod %s\n", podName)
 		if err != nil {
 			panic(err)
 		}
